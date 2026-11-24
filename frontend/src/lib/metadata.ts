@@ -5,7 +5,7 @@ export function pageMeta({
   title,
   description,
   path,
-  image = "/images/branding/og.jpg",
+  image = "/images/logo/AHA_logo.png",
   absolute = false,
 }: {
   title: string;
