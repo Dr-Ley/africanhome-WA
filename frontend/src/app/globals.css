@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@plugin "daisyui/theme" {
+  name: "aha";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+  --color-base-100: #ffffff;
+  --color-base-200: #faf8f2;
+  --color-base-300: #e9dfc9;
+  --color-base-content: #242824;
+  --color-primary: #183c2b;
+  --color-primary-content: #faf8f2;
+  --color-secondary: #b99a5a;
+  --color-secondary-content: #242824;
+  --color-accent: #7c8052;
+  --color-accent-content: #ffffff;
+  --color-neutral: #242824;
+  --color-neutral-content: #faf8f2;
+  --color-info: #7c8052;
+  --color-info-content: #ffffff;
+  --color-success: #183c2b;
+  --color-success-content: #faf8f2;
+  --color-warning: #b99a5a;
+  --color-warning-content: #242824;
+  --color-error: #8c3a3a;
+  --color-error-content: #ffffff;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.6rem;
+  --radius-box: 0.9rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@plugin "daisyui" {
+  themes: aha --default;
+}
+
+@theme inline {
+  --color-forest: #183c2b;
+  --color-olive: #7c8052;
+  --color-sand: #e9dfc9;
+  --color-cream: #faf8f2;
+  --color-charcoal: #242824;
+  --color-gold: #b99a5a;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-cormorant), "Times New Roman", serif;
+}
+
+:root {
+  --forest: #183c2b;
+  --olive: #7c8052;
+  --sand: #e9dfc9;
+  --cream: #faf8f2;
+  --charcoal: #242824;
+  --gold: #b99a5a;
+  --white: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--charcoal);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+}
+
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: #183c2b;
+  color: #faf8f2;
+}

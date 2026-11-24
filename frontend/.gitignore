@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+.turbo
+*.tsbuildinfo
+npm-debug.log*
+.playwright
+playwright-report
+test-results
+.DS_Store
